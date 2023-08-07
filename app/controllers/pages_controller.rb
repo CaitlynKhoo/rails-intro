@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @members = ["karthika", "barry", "kostas", "caitlyn"]
+    @members = ['karthika', 'barry', 'kostas', 'caitlyn'].sort
     searched = params[:member] #give me whatever value typed in the form
     if searched
       @members = @members.select do |member|
